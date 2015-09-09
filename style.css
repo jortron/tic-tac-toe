@@ -1,0 +1,26 @@
+#board {
+    width: 450px;
+    height: 750px;
+    }
+
+div div {
+    width: 150px;
+    height: 150px;
+    outline: 5px solid; 
+    float: left;
+    font-size: 72pt;
+    text-align: center;
+   }
+
+.butt {
+   border: 1px outset blue;
+   background-color: lightBlue;
+   height:50px;
+   width:50px;
+   cursor:pointer;
+}
+
+.butt:hover {
+   background-color: blue;
+   color:white;
+}

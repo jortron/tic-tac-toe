@@ -20,4 +20,6 @@ Lastly, I made a simple input button that refreshes the page so players can star
 **CSS**
 The CSS is pretty straight-forward. I define the size of my game board, and size and positioning of the divs nested inside. I styled the input buttons that make up the game board to make them square and change color when the mouse hovers over.
 
+
+**DIFFICULTIES**
 As of writing this (1:30pm on Friday 9/11/15), I have not solved the cat's game problem. I know I could have made my JS "DRY-er" by using loops (I think), but I had difficulty figuring them out.

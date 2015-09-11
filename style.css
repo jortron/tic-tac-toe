@@ -47,7 +47,7 @@ h1 {
 #oWins {
   text-align: center;
   font-family: helvetica;
-  color: red;
+  color: blue;
   font-size: 72pt;
   float: right;
 }
@@ -55,13 +55,10 @@ h1 {
    width:100px;
    height::50px;
    margin:auto;
+} 
+
+body {
+background-image: url(img/bg.jpg);
+background-attachment: fixed;
 }
-/* body {
-background-color:#a8e9ff;
-background-image:-moz-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
-background-image:linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
-background-image:-webkit-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
-background-image:-o-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
-background-image:-ms-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
-background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#a8e9ff), color-stop(25%,#052afc),color-stop(100%,#ff8d00));}
- }*/
+

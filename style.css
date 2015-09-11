@@ -22,7 +22,7 @@ div div {
    width:100px;
    cursor:pointer;
    font-size:40pt;
-   box-shadow:3px 3px 5px 6px #ccc;
+   box-shadow:3px 3px 5px 6px #444;
 
 }
 
@@ -36,8 +36,32 @@ h1 {
   font-family: helvetica;
 }
 
+#xWins {
+  text-align: center;
+  font-family: helvetica;
+  color: red;
+  font-size: 72pt;
+  float: left;
+}
+
+#oWins {
+  text-align: center;
+  font-family: helvetica;
+  color: red;
+  font-size: 72pt;
+  float: right;
+}
 .reset {
    width:100px;
    height::50px;
    margin:auto;
 }
+/* body {
+background-color:#a8e9ff;
+background-image:-moz-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+background-image:linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+background-image:-webkit-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+background-image:-o-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+background-image:-ms-linear-gradient(top, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#a8e9ff), color-stop(25%,#052afc),color-stop(100%,#ff8d00));}
+ }*/

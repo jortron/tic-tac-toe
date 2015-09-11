@@ -1,25 +1,21 @@
 $(document).ready(function(){
 	$(function () {
-// if playerOne went last, make it playerTwo's turn
-// if playerTwo went last, make it playerOne's turn
 		var turnCount=0;
+			$('.butt').click(function(){
+				if(turnCount %2 === 0){
+					($ (this) .replaceWith ('X') );
+				}
+				else{
+					($ (this) .replaceWith ('O') );
+				}
 
-		$('.butt').click(function(){
-			if(turnCount %2 === 0){
-				($ (this) .replaceWith ('X') );
-			}else{
-				($ (this) .replaceWith ('O') );
-			}
+				turnCount++;
 
-			turnCount++;
+				getWinner();
 
-			getWinner();
+			
 
-			if(getWinner === null && turnCount===9){
-				alert('Cats Game Sucker')
-			}
-
-		})
+			})
 
 
 	})
@@ -37,69 +33,70 @@ $(document).ready(function(){
 		
 //top row winner x
 		if(a === 'X' && b === 'X' && c === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
+			// alert("X wins!!")
 		}
 //middle row winner x
 		if(d === 'X' && e === 'X' && f === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 //bottom row winner x		
 		if(g === 'X' && h === 'X' && i === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 
 //first coloumn winner x
 		if(a === 'X' && d === 'X' && g === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 //second coloumn winner x
 		if(b === 'X' && e === 'X' && h === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 //third coloumn winner x		
 		if(c === 'X' && f === 'X' && i === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 //left to right diagonal winner x
 		if(a === 'X' && e === 'X' && i === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 //right to left diagonal winner x		
 		if(c === 'X' && e === 'X' && g === 'X'){
-			alert("X wins!!")
+			$('#xWins').html('X Wins!');
 		}
 //top row winner o
 		if(a === 'O' && b === 'O' && c === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 //middle row winner o
 		if(d === 'O' && e === 'O' && f === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 //bottom row winner o		
 		if(g === 'O' && h === 'O' && i === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 
 //first coloumn winner o
 		if(a === 'O' && d === 'O' && g === 'O'){
-			alert("X wins!!")
+			$('#oWins').html('O Wins!');
 		}
 //second coloumn winner o
 		if(b === 'O' && e === 'O' && h === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 //third coloumn winner o		
 		if(c === 'O' && f === 'O' && i === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 //left to right diagonal winner o
 		if(a === 'O' && e === 'O' && i === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 //right to left diagonal winner o		
 		if(c === 'O' && e === 'O' && g === 'O'){
-			alert("O wins!!")
+			$('#oWins').html('O Wins!');
 		}
 
 	}
